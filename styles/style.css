@@ -150,7 +150,6 @@ line-height: 24px;
   left: 150px;
 }
 
-
 .episodes-one{
   margin-top: 80px;
 }
@@ -181,6 +180,49 @@ max-height: none;
 display: none;
 }
 
+/* Phone */
+
+.container-phone {
+ margin: auto;
+ right: 0;
+ left: 150px;
+ position: absolute;
+}
+
+.divider-phone{
+  overflow: hidden;
+}
+
+.phone img{
+  width: 31.8%;
+  display: inline-block;
+  margin-top: -150px;
+  position: absolute;
+}
+
+.phone-text{
+  display: inline-block;
+  width: 36%;
+  text-align: justify;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+.phone-text h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 34px;
+  color: #060A24;
+  letter-spacing: 0;
+  margin-bottom: 5%;
+}
+
+.phone-text p{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 24px;
+}
 
 
 @media (max-width: 768px) {
