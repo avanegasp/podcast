@@ -182,30 +182,40 @@ display: none;
 
 /* Phone */
 
-.container-phone {
- margin: auto;
- right: 0;
- left: 150px;
- position: absolute;
-}
-
-.divider-phone{
+.phone-part{
   overflow: hidden;
 }
+
+.container-phone {
+  margin: auto;
+  right: 0;
+  left: 150px;
+  /* position: absolute; */
+}
+
+.phone{
+  position: relative;
+  left: 90px;
+}
+
+/* .divider-phone{
+  overflow: hidden;
+} */
+
 
 .phone img{
   width: 31.8%;
   display: inline-block;
   margin-top: -150px;
-  position: absolute;
+  /* position: relative; */
 }
 
 .phone-text{
   display: inline-block;
-  width: 36%;
+  width: 32%;
   text-align: justify;
-  margin-left: 40%;
-  margin-top: 5%;
+  /* margin-left: 40%;
+  margin-top: 5%; */
 }
 
 .phone-text h2{
@@ -224,6 +234,54 @@ display: none;
   line-height: 24px;
 }
 
+/* Photos scienses */
+
+.vivienda-destacadas{
+  overflow: hidden;
+  margin-top: 130px;
+}
+
+.vivienda-destacadas h2{
+  margin-left: 130px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 30px;
+}
+
+.fotos-casas{
+  padding-top: 60px;
+}
+
+/* .f-contenedor{
+  width: 100%;
+  list-style: none;
+  background: black;
+} */
+
+.f-contenedor li{
+  float: left;
+  width: 33.3%;
+  overflow: hidden;
+}
+
+/* .f-contenedor a{
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding: 56.2% 0 0 0;
+  overflow: hidden;
+  background-color: black;
+} */
+
+.f-contenedor img{
+  /* position: absolute; */
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform:scale(1.15);
+}
 
 @media (max-width: 768px) {
 
