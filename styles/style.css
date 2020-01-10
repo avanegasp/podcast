@@ -106,14 +106,29 @@ line-height: 24px;
 
 /* Episodios */
 
-
-
+/* Clip path */
 .episodes-color{
   clip-path: polygon(100% 64%, 0% 100%, 100% 100%);
 	width: 100%;
 	height: 300px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   margin-bottom: -32px;
+}
+
+.episodes-color-two{
+  clip-path: polygon(0 78%, 0% 100%, 98% 78%);
+  width: 100%;
+	height: 500px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  margin-top: -390px;
+}
+
+.episodes-color-three{
+  clip-path: polygon(100% 64%, 0% 100%, 100% 100%);
+	width: 100%;
+	height: 300px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  margin-bottom: -1px;
 }
 
 .container{
@@ -132,13 +147,6 @@ line-height: 24px;
   margin-right: 70px;
 } 
 
-.episodes-color-two{
-  clip-path: polygon(0 78%, 0% 100%, 98% 78%);
-  width: 100%;
-	height: 500px;
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  margin-top: -390px;
-}
 .episodes-title h2{
   position: relative;
   display: inline-block;
@@ -156,6 +164,7 @@ line-height: 24px;
 .episodes-two{
   margin-bottom: 50px;
 }
+
 
 /* Menu btn */
 .header .menu-btn {
@@ -286,12 +295,12 @@ display: none;
 /* Themes */
 
 .caracteristicas h2{
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .c-container{
   width: 80%;
-  padding-top: 60px;
+  padding-top: 100px;
   margin: auto;
 }
 
@@ -299,6 +308,7 @@ display: none;
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin-bottom: -140px;
 }
 
 .themes li{
@@ -310,8 +320,36 @@ display: none;
   margin-bottom: 60px;
 }
 
+/* SECTION NEWS */
 
+.news-container{
+  /* width: 80%; */
+  padding-top: 120px;
+  padding-bottom: 100px;
+  margin: auto;
+}
 
+.news{
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.text-news{
+  text-align: center;
+}
+
+.text-news h2{
+  margin-bottom: 40px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 38px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.text-news button{
+  padding: 15px 45px 15px 45px;
+  background-color: #00F3BB ;
+  text-transform: uppercase;
+}
 
 @media (max-width: 768px) {
 
