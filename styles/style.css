@@ -283,6 +283,36 @@ display: none;
   transform:scale(1.15);
 }
 
+/* Themes */
+
+.caracteristicas h2{
+  margin-bottom: 50px;
+}
+
+.c-container{
+  width: 80%;
+  padding-top: 60px;
+  margin: auto;
+}
+
+.themes{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.themes li{
+  text-align: center;
+}
+
+.themes h3{
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+
+
+
 @media (max-width: 768px) {
 
 .header li a:hover,
