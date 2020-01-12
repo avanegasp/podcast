@@ -21,11 +21,14 @@ a {
 /* header */
 
 .header {
-  /* background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
-  /* position: fixed; */
   width: 100%;
   z-index: 3;
+}
+
+.container{
+  width: 90%;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .header ul {
@@ -33,13 +36,11 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: #fff; */
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* border-right: 1px solid #f4f4f4; */
   text-decoration: none;
 }
 
@@ -59,17 +60,38 @@ line-height: 28px;
   text-decoration: none;
 }
 
+
+/* Menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.header li {
+  float: left;
+}
+
+.header li a {
+padding: 18px 30px;
+}
+
+.header .menu {
+clear: none;
+float: right;
+max-height: none;
+}
+
+.header .menu-icon {
+display: none;
+}
+
+
 .logo-img {
     padding: 23px;
+    padding-left: ;
 }
 
 .titulo-box{
-    position: absolute;
-    width: 80%;
-    /* top: 50%; */
-    left: 0px;
-    right: 0px;
-    margin: auto;
+    margin-top: 50px;
 }
 
 .titulo-box p{
@@ -104,55 +126,76 @@ line-height: 24px;
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
 
-/* Episodios */
-
 /* Clip path */
 .episodes-color{
-  clip-path: polygon(100% 64%, 0% 100%, 100% 100%);
-	width: 100%;
-	height: 300px;
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  margin-bottom: -32px;
+  background:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  transform: skewY(-4deg);
 }
+
 
 .episodes-color-two{
   clip-path: polygon(0 78%, 0% 100%, 98% 78%);
   width: 100%;
-	height: 500px;
+  height: 500px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   margin-top: -390px;
+  position: relative;
 }
 
 .episodes-color-three{
   clip-path: polygon(100% 64%, 0% 100%, 100% 100%);
-	width: 100%;
-	height: 300px;
+  width: 100%;
+  height: 300px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   margin-bottom: -1px;
 }
+
+/* Episodios */
+
+.episodes{
+  position: relative;
+}
+
 
 .container{
   margin: auto;
 }
 
 .f-container{
-  background:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   overflow: hidden;
+}
+
+.f-container li iframe{
+  width: 100%;
+  height: 400px;
 }
 
 .f-container li{
   display: inline-block;
-  margin-top: 50px;
-  margin-left: 70px;
-  margin-right: 70px;
+  width: 45%;
 } 
+
+.f-container .episodes-one, .f-container .episodes-two {
+  overflow: hidden;
+}
+
+.f-container .episodes-one li:last-child {
+  float: right;
+}
+
+.f-container .episodes-two li:last-child {
+  float: right;
+}
 
 .episodes-title h2{
   position: relative;
   display: inline-block;
   top: 80px;
   font-family: 'IBM Plex Mono', monospace;
-  /* font-size: 48px; */
   color: #FFFFFF;
   letter-spacing: 0;
   left: 150px;
@@ -166,82 +209,32 @@ line-height: 24px;
 }
 
 
-/* Menu btn */
-.header .menu-btn {
-    display: none;
-  }
-
-.header li {
-    float: left;
-}
-
-.header li a {
-padding: 20px 30px;
-}
-
-.header .menu {
-clear: none;
-float: right;
-max-height: none;
-}
-
-.header .menu-icon {
-display: none;
-}
-
 /* Phone */
-
-.phone-part{
-  overflow: hidden;
-}
-
-.container-phone {
-  margin: auto;
-  right: 0;
-  left: 150px;
-  /* position: absolute; */
-}
-
 .phone{
-  position: relative;
-  left: 90px;
-}
-
-/* .divider-phone{
   overflow: hidden;
-} */
-
+}
 
 .phone img{
-  width: 31.8%;
-  display: inline-block;
-  margin-top: -150px;
-  /* position: relative; */
+  width: 100%;
 }
 
-.phone-text{
-  display: inline-block;
-  width: 32%;
-  text-align: justify;
-  /* margin-left: 40%;
-  margin-top: 5%; */
-}
+  .phone-part{
+    margin-top: -110px;
+  }
 
-.phone-text h2{
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 34px;
-  color: #060A24;
-  letter-spacing: 0;
-  margin-bottom: 5%;
-}
+  .phone-part .container{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+  }
 
-.phone-text p{
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
-  color: #060A24;
-  letter-spacing: 0;
-  line-height: 24px;
-}
+  .phone-part .phone, .phone-part .phone-text{
+    width: 50%;
+  }
+
+
+.
+
 
 /* Photos scienses */
 
@@ -251,7 +244,7 @@ display: none;
 }
 
 .vivienda-destacadas h2{
-  margin-left: 130px;
+  margin-top: 50px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 30px;
 }
@@ -260,41 +253,31 @@ display: none;
   padding-top: 60px;
 }
 
-/* .f-contenedor{
-  width: 100%;
+.fotos-casas ul {
   list-style: none;
-  background: black;
-} */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 
-.f-contenedor li{
-  float: left;
-  width: 33.3%;
-  overflow: hidden;
 }
 
-/* .f-contenedor a{
-  display: block;
-  width: 100%;
-  position: relative;
-  height: 0;
-  padding: 56.2% 0 0 0;
-  overflow: hidden;
-  background-color: black;
-} */
-
-.f-contenedor img{
-  /* position: absolute; */
-  display: inline-block;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transform:scale(1.15);
+.fotos-casas ul li{
+  width: 33.33333333333333333333333333333333%;
 }
+
+.fotos-casas ul li img{
+  width: 100%;
+}
+
+.fotos-casas ul:first-child {
+  margin-bottom: -5px;
+}
+
 
 /* Themes */
 
 .caracteristicas h2{
+  margin-top: 50px;
   margin-bottom: 90px;
 }
 
@@ -349,21 +332,27 @@ display: none;
   padding: 15px 45px 15px 45px;
   background-color: #00F3BB ;
   text-transform: uppercase;
+  margin-bottom: 80px;
 }
 
 /* footer */
 
 .container-footer{
-  width: 80%;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: auto;
   display: flex;
   justify-content: space-around;
+  width: 90%;
+  max-width: 1920px;
 }
 
 .icons-media i{
   padding-left: 10px;
+}
+
+.footer-hello{
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -422,7 +411,17 @@ display: none;
   
 /* menu btn */  
   .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    /* position: absolute;
+    left: 0; */
+    min-height: 260px;
+    overflow: scroll;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #0000EC;
+  }
+
+  .header .menu-btn:checked ~ .menu li {
+    width: 100%;
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon {
