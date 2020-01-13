@@ -94,6 +94,10 @@ display: none;
     margin-top: 50px;
 }
 
+.titulo-box span{
+  text-decoration: line-through;
+}
+
 .titulo-box p{
 font-family: IBMPlexMono;
 font-size: 16px;
@@ -124,6 +128,11 @@ line-height: 24px;
 
 .btn:hover{
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+.header li:first-child a:hover{
+  text-decoration: line-through;
+  color: #00F0B8;
 }
 
 /* Clip path */
@@ -171,7 +180,8 @@ line-height: 24px;
 
 .f-container li iframe{
   width: 100%;
-  height: 400px;
+  height: 300px;
+  border: 0;
 }
 
 .f-container li{
@@ -198,14 +208,15 @@ line-height: 24px;
   font-family: 'IBM Plex Mono', monospace;
   color: #FFFFFF;
   letter-spacing: 0;
-  left: 150px;
+  /* left: 150px; */
+  margin-bottom: 50px;
 }
 
 .episodes-one{
   margin-top: 80px;
 }
 .episodes-two{
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 
@@ -235,6 +246,7 @@ line-height: 24px;
 .phone-text p {
   width: 60%;
   text-align: justify;
+  font-family: 'IBM Plex Mono', monospace;
 } 
 
 
@@ -246,7 +258,6 @@ line-height: 24px;
 }
 
 .vivienda-destacadas h2{
-  margin-top: 50px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 30px;
 }
@@ -446,7 +457,10 @@ line-height: 24px;
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  
+
+  .phone-part .phone-text {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -457,6 +471,7 @@ line-height: 24px;
 
   .episodes-title h2 {
     margin-bottom: 50px;
+    left: 0;
   }
 
   .episodes-one li{
@@ -473,6 +488,7 @@ line-height: 24px;
 
   .phone-part .phone{
     width: 100%;
+    margin-top: -75px;
   }
 
   .phone-text p{
@@ -494,6 +510,39 @@ line-height: 24px;
 
   .phone-part .phone-text{
     width: 100%;
+  }
+
+  .themes li:last-child{
+    margin-bottom: -230px;
+  }
+
+  .container-footer{
+    display: inline-block;
+  }
+
+  .icons-media{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .news{
+    background-image: linear-gradient(225deg, #0000C3 0%, #0000A3 100%);
+  }
+
+
+}
+
+
+@media (max-width: 320px) {
+
+  .episodes-title h2{
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+
+  .phone-part .phone{
+    margin-top: -115px;
   }
 
 }

@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Xpodcast</title>
     <link rel="stylesheet" href="styles/style.css">
-    <!-- Google-fonts -->
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
     <!-- CDN font-awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- CDN font-awesome-icons -->
@@ -19,9 +17,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <img class="logo-img" src="images/logo.svg" alt="logo">
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <img class="logo-img" src="images/logo.svg" alt="logo">
             
             <ul class="menu">
                 <li><a href="#episodes">EPISODIOS</a></li>
@@ -31,7 +29,7 @@
             </ul>
             
             <div class="titulo-box">
-                <h1>Hello word pale blue dot.</h1>
+                <h1>Hello <span>word</span> pale blue dot.</h1>
                 <p>El portal de podcast que explora el mundo de la programación y <br> la tecnología. Nuevos episodios,todos los jueves cada 15 días.</p>
                 <a href="#" class="btn btn-completo">CONOCÉ MÁS
                 </a>
@@ -46,16 +44,18 @@
             <div class="episodes-title">
                 <h2>Episodios</h2>
                 </div>
-                <ul class="f-container">
-                    <div class="episodes-one">
-                        <li><iframe src="https://open.spotify.com/embed-podcast/show/6tBYF4J9xZyJOx2XAQEywe"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-                        <li><iframe src="https://open.spotify.com/embed-podcast/show/7dDqelrnCOncQUbXQH1RC3"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-                    </div>
-                    <div class="episodes-two">
-                        <li><iframe src="https://open.spotify.com/embed-podcast/show/07GQhOZboEZOE1ysnFLipT"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-                        <li><iframe src="https://open.spotify.com/embed-podcast/show/333BYqSFiwCNDu0ewIa2Eu"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-                    </div>
-                </ul>
+                <div class="f-container">
+                    <ul class="episodes-one">
+                        <li><iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" allowtransparency="true" allow="encrypted-media"></iframe></li>
+                        <li><iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"   allow="encrypted-media">
+                        </iframe></li>
+                    </ul>
+                    <ul class="episodes-two">
+                        <li><iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allowtransparency="true" allow="encrypted-media"></iframe></li>
+                        <li><iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"  allow="encrypted-media">
+                        </iframe></li>
+                    </ul>
+                </div>
         </div>
         <!-- <div class="episodes-color-two"></div> -->
     </section>
@@ -87,8 +87,8 @@
                 <li><img src="images/Margaret_Hamilton.png" alt="Margaret_Hamilton"></li>
             </ul>
             <ul class="">
-                <li><img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Univac"></li>
-                <li><img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer-Operators"></li>
+                <li><img src="images/An_E.R.A.Univac.png" alt="Univac"></li>
+                <li><img src="images/Computer_operators.png" alt="Computer-Operators"></li>
                 <li><img src="images/susan-kare.png" alt="susan-kare"></li>
             </ul>
         </div>
@@ -98,16 +98,16 @@
         <div class="container">
             <h2>Algunos de nuestros trabajos</h2>
             <ul class="themes"> 
-                <li> <img src="images/icon1.svg" alt=""> 
+                <li> <img src="images/icon1.svg" alt="trabajo-remoto"> 
                     <h3>Trabajo Remoto</h3>
                 </li>
-                <li> <img src="images/icon2.svg" alt=""> 
+                <li> <img src="images/icon2.svg" alt="repensando-la-programación"> 
                     <h3>Repensando <br> la programación</h3>
                 </li>
-                <li> <img src="images/icon3.svg" alt="">
+                <li> <img src="images/icon3.svg" alt="bases-del-código">
                     <h3>Bases del código</h3>
                 </li>
-                <li> <img src="images/icon4.svg" alt="">
+                <li> <img src="images/icon4.svg" alt="seguridad-informábtica">
                     <h3>Seguridad informática</h3>
                 </li>
             </ul>
@@ -119,7 +119,7 @@
         <div class="container">
             <div class="text-news">
             <h2>¿Querés las últimas novedades?</h2>
-                <button id="episodes">Escuchá los episodios</button>
+                <button class="btn">Escuchá los episodios</button>
             </div>
         </div>
     </section>
@@ -130,11 +130,11 @@
                 <span>2019 - Hello blue pale dot</span>
             </div>
             <div class="icons-media">
-                <a href=""><i class="fa fa-spotify"></i></a>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>  
-                <a href=""><i class="fa fa-facebook-f"></i></a>    
-                <a href=""><i class="fa fa-telegram"></i></a>    
+                <a href="https://www.spotify.com" target="black" ><i class="fa fa-spotify"></i></a>
+                <a href="https://www.instagram.com" target="black"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="black"><i class="fa fa-twitter"></i></a>  
+                <a href="https://www.facebook.com" target="black"><i class="fa fa-facebook-f"></i></a>    
+                <a href="https://www.telegram.com" target="black"><i class="fa fa-telegram"></i></a>    
             </div>
         </div>
     </footer>    
