@@ -1,7 +1,7 @@
-Hola! Adjunto URL de mi página web y mi github donde hacía mis commits.
+Hola! Adjunto URL de mi página web y mi github donde esta mi repositorio.
 
 http://thexpods.atwebpages.com/
 
-https://github.com/avanegasp
+https://github.com/avanegasp/podcast
 
 Gracias!
