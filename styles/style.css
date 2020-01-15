@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -22,8 +25,6 @@ body {
   --brand-black:#000;
   --font-mono: 'IBM Plex Mono', monospace; 
   --font-sans: 'IBM Plex Sans', sans-serif;
-  --font-great: 'IM Fell Great Primer SC', serif;
-  --font-source: 'Source Code Pro', monospace;
   --font-helvetica: 'Helvetica', sans-serif;
 }
 
@@ -329,8 +330,7 @@ line-height: 24px;
 .themes h3{
   margin-top: 25px;
   margin-bottom: 60px;
-  font-family: var(--font-great)
-}
+  font-family: 'IM Fell Great Primer SC', serif;}
 
 /* SECTION NEWS */
 
@@ -356,7 +356,7 @@ line-height: 24px;
 
 .text-news h2{
   margin-bottom: 40px;
-  font-family: var(--font-source);
+  font-family: 'Source Code Pro', monospace;
   font-size: 38px;
   color: var(--brand-white);
   letter-spacing: 0;
